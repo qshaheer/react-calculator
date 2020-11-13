@@ -63,6 +63,26 @@ return queryInterface.addColumn(
   }
 )
 
+https://github.com/yoonic/atlas (Hapi)
+https://github.com/khoadodk/ECommerce-MERN (ecom-mern)
+https://github.com/Cron-J/JWT-Hapi-Mongoose-Mongodb-with-email-verification-and-forgot-password (Hapi jwt)
+https://dzone.com/articles/hapijs-authentication-secure-your-api-with-jwt 
+
+endpoint: /api/v2/locations/add
+http: POST
+params:
+{
+  "user_id": 0,
+  "location": [
+    {
+      "item_status": "General | PackCount | Gated",
+      "sellable_quantity": int,
+      "unsellable_quantity": int,
+      "item_ref": "string"
+    }
+  ]
+}
+
 mongodump --uri mongodb+srv://production:JofilbQzS1zsdsdc@cappythingsnecessary-1.7jia5.mongodb.net/cappy-stage
 
 mongorestore -d cappy-stage dump/cappy-stage/ --noIndexRestore
